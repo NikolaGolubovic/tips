@@ -13,7 +13,7 @@ function App() {
   const [tagsObj, setTagsObj] = useState({ all: sources });
   const [tag, setTag] = useState("all");
 
-  const postsPerPage = 2;
+  const postsPerPage = 5;
   useEffect(() => {
     setTagsObj(groupByTags(sources));
   }, []);

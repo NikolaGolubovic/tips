@@ -3,9 +3,9 @@ import { useHistory, useLocation } from "react-router-dom";
 
 function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
   const [btnIndex, setBtnIndex] = useState(0);
-  const [numDocuments, setNumDocuments] = useState(tagsObj[tag].length);
   const history = useHistory();
   const location = useLocation();
+  const numDocuments = tagsObj[tag].length;
   useEffect(() => {
     console.log(Math.ceil(numDocuments / postsPerPage) - 3);
     setBtnIndex(location.pathname.slice(1).split("-")[1] - 1);
@@ -13,8 +13,11 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
   function pagPage(arrLength, page) {
     let numOfPages = Math.ceil(arrLength.length / page);
     let arrs = Array.from({ length: numOfPages }, (_v, index) => {
-      const middle = Math.ceil(numDocuments / postsPerPage / 2);
-      // console.log(Math.ceil(numDocuments / 5));
+      const etcButton = {
+        background: btnIndex > 3 && index === 2 && "rgb(241, 250, 238)",
+        color: btnIndex > 3 && index === 2 && "rgb(29, 53, 87)",
+        fontSize: btnIndex > 3 && index === 2 && "1.3em",
+      };
       const arr = [
         0,
         1,
@@ -27,18 +30,20 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
       return (
         <button
           disabled={
-            index === Math.ceil(numDocuments / postsPerPage) - 2 &&
-            btnIndex !== Math.ceil(numDocuments / postsPerPage) - 3 &&
-            Math.ceil(numDocuments / postsPerPage) - 2 &&
-            btnIndex !== Math.ceil(numDocuments / postsPerPage) - 1
+            (btnIndex > 3 && index === 2) ||
+            (index === Math.ceil(numDocuments / postsPerPage) - 2 &&
+              btnIndex !== Math.ceil(numDocuments / postsPerPage) - 3 &&
+              Math.ceil(numDocuments / postsPerPage) - 2 &&
+              btnIndex !== Math.ceil(numDocuments / postsPerPage) - 1)
           }
           key={`button-${index}`}
           onClick={() => {
-            console.log(index);
             setCurrentPage(index);
             setTag(tag);
             history.push(`${tag}-${index + 1}`);
           }}
+          style={etcButton}
+          // https://stackoverflow.com/questions/37312122/how-to-do-a-nested-if-else-statement-in-reactjs-jsx
           className={
             arr.includes(index) && index === btnIndex
               ? "btn-pagination visible active"
@@ -61,7 +66,7 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
           >
             ...
           </div>
-          {index + 1}
+          {btnIndex > 3 && index === 2 ? "..." : index + 1}
         </button>
       );
     });
