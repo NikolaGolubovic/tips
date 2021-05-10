@@ -107,3 +107,21 @@ button:hover {
 .posts {
   min-height: 70vh;
 }
+
+.btn-github {
+  background: "black";
+  color: var(--white);
+  background: rgb(29, 53, 87);
+  padding: 5px;
+  border: none;
+  margin: 5px 0;
+  cursor: pointer;
+  display: block;
+  float: right;
+  position: fixed;
+  right: 0;
+}
+
+.github {
+  color: white;
+}

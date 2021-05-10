@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 import "./App.css";
 import Pagination from "./components/Pagination";
 import Posts from "./components/Posts";
@@ -45,6 +46,11 @@ function App() {
   }
   return (
     <BrowserRouter>
+      <a className="btn-github" href="https://github.com/NikolaGolubovic/tips">
+        {" "}
+        Github <FaGithub className="github" />{" "}
+      </a>
+
       <div className="container">
         <Tags
           tagsArr={tagsArr}
