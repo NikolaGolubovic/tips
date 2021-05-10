@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&display=swap');
+:root {
+  --red: rgb(230, 57, 70);
+  --white: rgb(241, 250, 238);
+  --light-blue: rgb(168, 218, 220);
+  --blue: rgb(69, 123, 157);
+  --dark-blue: rgb(29, 53, 87);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: 'Itim', cursive;
+  background: var(--white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: 3px solid var(--red);
+  border-radius: 10px;
+  box-shadow: 1px 3px 8px var(--dark-blue);
+}
+
+.story {
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: "Open Sans"
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-tag {
+  padding: 10px 30px;
+  margin: 5px 10px 10px 0;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid var(--dark-blue)
+}
+
+.btn-tag.active {
+  background: var(--red);
+  color: var(--white);
+}
+
+.pagination {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-pagination {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-right: 10px;
+  overflow: hidden;
+  z-index: 110;
+  outline: none;
+}
+
+.dots-wrapper {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  position: relative;
+  right: 0;
+  top: 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: var(--white);
+  color: rgb(29, 53, 87);
+  font-size: 1.6em;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-pagination.visible.active {
+  background: var(--red);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-pagination.visible {
+  display: block;
+}
+
+.btn-pagination.hide {
+  display: none;
+}
+
+.posts {
+  min-height: 70vh;
 }
