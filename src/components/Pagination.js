@@ -7,7 +7,6 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
   const location = useLocation();
   const numDocuments = tagsObj[tag].length;
   useEffect(() => {
-    console.log(Math.ceil(numDocuments / postsPerPage) - 3);
     setBtnIndex(location.pathname.slice(1).split("-")[1] - 1);
   }, [location.pathname]);
   function pagPage(arrLength, page) {
@@ -18,7 +17,7 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
         color: btnIndex > 3 && index === 2 && "rgb(29, 53, 87)",
         fontSize: btnIndex > 3 && index === 2 && "1.3em",
       };
-      const arr = [
+      let arr = [
         0,
         1,
         2,
@@ -56,6 +55,7 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
             className="dots-wrapper"
             style={{
               display:
+                Math.ceil(numDocuments / postsPerPage) > 5 &&
                 index === Math.ceil(numDocuments / postsPerPage) - 2 &&
                 btnIndex !== Math.ceil(numDocuments / postsPerPage) - 3 &&
                 btnIndex !== Math.ceil(numDocuments / postsPerPage) - 2 &&
@@ -66,7 +66,7 @@ function Pagination({ tagsObj, tag, postsPerPage, setCurrentPage, setTag }) {
           >
             ...
           </div>
-          {btnIndex > 3 && index === 2 ? "..." : index + 1}
+          {btnIndex > 3 && index === 2 && numDocuments > 5 ? "..." : index + 1}
         </button>
       );
     });
