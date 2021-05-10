@@ -69,7 +69,6 @@ button:hover {
 .btn-pagination {
   width: 30px;
   height: 30px;
-  border-radius: 3px;
   border: none;
   background: var(--dark-blue);
   color: var(--white);
@@ -83,7 +82,6 @@ button:hover {
   display: none;
   width: 30px;
   height: 30px;
-  border-radius: 3px;
   position: relative;
   right: 0;
   top: 0;
