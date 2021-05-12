@@ -12,37 +12,32 @@ export const sources = [
     tags: ["vscode"],
   },
   {
-    link:
-      "https://www.reddit.com/r/learnprogramming/comments/m8nmuu/all_the_mooc_of_helsinki_university/",
+    link: "https://www.reddit.com/r/learnprogramming/comments/m8nmuu/all_the_mooc_of_helsinki_university/",
     linkType: "reddit",
     shortStory: "Great courses by University of Helsinki",
     tags: ["frontend", "backend", "fullstack", "devops"],
   },
   {
-    link:
-      "https://www.reddit.com/r/learnprogramming/comments/l7vfvs/web_developers_learning_to_code/",
+    link: "https://www.reddit.com/r/learnprogramming/comments/l7vfvs/web_developers_learning_to_code/",
     linkType: "reddit",
     shortStory: "Great reddit subs for webdevs",
     tags: ["frontend", "backend", "fullstack"],
   },
   {
-    link:
-      "https://www.reddit.com/r/webdev/comments/l1j11x/freelancers_how_did_you_get_started/",
+    link: "https://www.reddit.com/r/webdev/comments/l1j11x/freelancers_how_did_you_get_started/",
     linkType: "reddit",
     shortStory: "Good to know for beginner freelancers",
     tags: ["jobs"],
   },
   {
-    link:
-      "https://blog.vlddev.live/10-github-repos-you-need-to-know-as-a-web-developer",
+    link: "https://blog.vlddev.live/10-github-repos-you-need-to-know-as-a-web-developer",
     linkType: "blog",
     shortStory:
       "Interesting github repos - FrontEnd Dev Bookmarks, Free Programming Books, Js Algorithms and DataStructure, CSS Pro Tips, Learn Git Branching",
     tags: ["css", "frontend", "algorithms", "git", "design"],
   },
   {
-    link:
-      "https://www.reddit.com/r/webdev/comments/i07h0k/oauth_open_authorization/",
+    link: "https://www.reddit.com/r/webdev/comments/i07h0k/oauth_open_authorization/",
     linkType: "reddit",
     shortStory: "Quick Graph how Authorization works",
     tags: ["backend"],
@@ -67,8 +62,7 @@ export const sources = [
     tags: ["css", "design"],
   },
   {
-    link:
-      "https://pbs.twimg.com/media/EyW_26XUYAYRx_q?format=jpg&name=900x900 ",
+    link: "https://pbs.twimg.com/media/EyW_26XUYAYRx_q?format=jpg&name=900x900 ",
     linkType: "twitter",
     shortStory: "Css unit Explained",
     tags: ["css"],
@@ -153,8 +147,7 @@ export const sources = [
     tags: ["frontend"],
   },
   {
-    link:
-      "https://gist.github.com/Mark-Cooper-Janssen-Vooles/f599220cd507a6f8416e870612ae3f2a",
+    link: "https://gist.github.com/Mark-Cooper-Janssen-Vooles/f599220cd507a6f8416e870612ae3f2a",
     linkType: "github",
     shortStory:
       "Cheet sheet for react routers, also check https://reactrouter.com/web/api/history",
@@ -174,8 +167,7 @@ export const sources = [
     tags: ["design"],
   },
   {
-    link:
-      "https://www.reddit.com/r/webdev/comments/mpgc9g/how_to_design_almost_any_ui_element_list_of_58/gu9owie/",
+    link: "https://www.reddit.com/r/webdev/comments/mpgc9g/how_to_design_almost_any_ui_element_list_of_58/gu9owie/",
     linkType: "reddit",
     shortStory: "Design forms, pagination, dropdowns, modals, cards, tooltips",
     tags: ["design"],
@@ -266,5 +258,30 @@ export const sources = [
     linkType: "blog",
     shortStory: "Learn css grid interactively",
     tags: ["frontend"],
+  },
+  {
+    link: "https://github.com/public-apis/public-apis",
+    linkType: "github",
+    shortStory:
+      "A collective list of free APIs for use in software and web development",
+    tags: ["frontend", "backend", "fullstack"],
+  },
+  {
+    link: "https://twitter.com/dermayank/status/1392329073070805000",
+    linkType: "twitter",
+    shortStory: "Productive Tools that will save you your time",
+    tags: ["design", "frontend"],
+  },
+  {
+    link: "https://twitter.com/dermayank/status/1392329091739652097",
+    linkType: "twitter",
+    shortStory: "Eight Free Website Hosting Services",
+    tags: ["backend", "fullstack"],
+  },
+  {
+    link: "https://www.reddit.com/r/learnprogramming/comments/na9oov/cs_books_for_casual_reading/",
+    linkType: "reddit",
+    shortStory: "CS books for casual reading",
+    tags: ["various"],
   },
 ];
