@@ -284,4 +284,56 @@ export const sources = [
     shortStory: "CS books for casual reading",
     tags: ["various"],
   },
+  {
+    link: "https://twitter.com/girl_whocode/status/1392714963039383554",
+    linkType: "twitter",
+    shortStory: "Learn CSS by playing games",
+    tags: ["css"],
+  },
+  {
+    link: "https://twitter.com/Prathkum/status/1394244169145544706",
+    linkType: "twitter",
+    shortStory: "Make your background interesting",
+    tags: ["css", "design"],
+  },
+  {
+    link: "https://twitter.com/UbahTheBuilder/status/1395003559557701633",
+    linkType: "twitter",
+    shortStory:
+      "7 VSCode extensions to improve productivity as a web developer",
+    tags: ["vscode"],
+  },
+  {
+    link: "https://www.freecodecamp.org/news/make-your-site-beautiful-using-web-design-principles/",
+    linkType: "blog",
+    shortStory:
+      "How to Use Basic Web Design Principles to Make Your Site Beautiful",
+    tags: ["design"],
+  },
+  {
+    link: "https://fullstackopen.com/en",
+    linkType: "course",
+    shortStory:
+      "My recommendation - Learn React, Express, communication between them and much more",
+    tags: ["tutorial"],
+  },
+  {
+    link: "https://fullstackopen.com/en",
+    linkType: "course",
+    shortStory:
+      "My recommendation - Learn React, Express, communication between them and much more",
+    tags: ["tutorial"],
+  },
+  {
+    link: "https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/",
+    linkType: "course",
+    shortStory: "My recommendation - Advanced web development",
+    tags: ["tutorial"],
+  },
+  {
+    link: "https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/",
+    linkType: "blog",
+    shortStory: "Diferences between Arrow and Regular Function",
+    tags: ["pure javascript"],
+  },
 ];
