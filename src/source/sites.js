@@ -334,6 +334,6 @@ export const sources = [
     link: "https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/",
     linkType: "blog",
     shortStory: "Diferences between Arrow and Regular Function",
-    tags: ["pure javascript"],
+    tags: ["vanila"],
   },
 ];
