@@ -318,13 +318,6 @@ export const sources = [
     tags: ["tutorial"],
   },
   {
-    link: "https://fullstackopen.com/en",
-    linkType: "course",
-    shortStory:
-      "My recommendation - Learn React, Express, communication between them and much more",
-    tags: ["tutorial"],
-  },
-  {
     link: "https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/",
     linkType: "course",
     shortStory: "My recommendation - Advanced web development",
